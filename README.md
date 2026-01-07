@@ -1,176 +1,125 @@
-🎬 Sentiment Analysis of Movie Reviews
+# 🎬 Sentiment Analysis of Movie Reviews
 
-A machine learning project that performs sentiment classification (positive / negative) on movie reviews using TF-IDF feature extraction and Support Vector Machine (SVM) classifiers.
-The project follows a modular Python structure, supports multiple kernels, and includes model comparison and visualization.
+A machine learning project that performs **sentiment classification (positive / negative)** on movie reviews using **TF-IDF feature extraction** and **Support Vector Machine (SVM)** classifiers.  
+The project follows a **modular Python structure**, supports **multiple kernels**, and includes **model comparison and visualization**.
 
-📌 Project Overview
+---
+
+## 📌 Project Overview
 
 This project aims to:
+- Load and preprocess raw movie review text data
+- Convert text into numerical features using **TF-IDF**
+- Train multiple **SVM models** with different kernels
+- Evaluate models using **Accuracy, F1-Score, Confusion Matrix**
+- Compare and visualize model performance
+- Save trained models and evaluation results for reuse
 
-Load and preprocess raw movie review text data
+The dataset is structured into `train` and `test` folders with `pos` and `neg` subfolders, containing individual `.txt` review files.
 
-Convert text into numerical features using TF-IDF
+---
 
-Train multiple SVM models with different kernels
+## 📂 Dataset Structure
+<img width="296" height="211" alt="image" src="https://github.com/user-attachments/assets/2fd5c474-5c25-4bc1-8046-35ecda7d7921" />
 
-Evaluate models using Accuracy, F1-Score, Confusion Matrix
+---
 
-Compare and visualize model performance
+## 🧠 Models Used
 
-Save trained models and evaluation results for reuse
+- **Support Vector Machine (SVM)**
+  - Linear Kernel
+  - Polynomial Kernel
+  - RBF Kernel
 
-The dataset is structured into train and test folders with pos and neg subfolders, containing individual .txt review files.
+---
 
-📂 Dataset Structure
-clean_dataset/
-├── train/
-│   ├── pos/
-│   └── neg/
-└── test/
-    ├── pos/
-    └── neg/
+## 📊 Evaluation Metrics
 
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- Kernel-wise performance comparison
 
-Each file contains one movie review.
+---
 
-🧠 Models Used
+## 📁 Project Structure
+<img width="636" height="432" alt="image" src="https://github.com/user-attachments/assets/4daeb3cd-1b25-4119-84a6-61bf88b3b5f6" />
 
-Support Vector Machine (SVM)
+---
 
-Linear Kernel
+## ⚙️ Installation
 
-Polynomial Kernel
-
-RBF Kernel
-
-📊 Evaluation Metrics
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
-
-Confusion Matrix
-
-Kernel-wise performance comparison
-
-📁 Project Structure
-Sentiment-Analysis-of-Movie_Reviews/
-├── src/
-│   ├── __init__.py
-│   ├── data_loading_preprocessing.py
-│   ├── train.py
-│   └── compare_and_visualize.py
-├── clean_dataset/
-├── results/
-│   ├── evaluation_metrics.csv
-│   └── kernel_comparison.png
-├── saved_models/        # ignored by git
-├── requirements.txt
-├── README.md
-└── .gitignore
-
-⚙️ Installation
-1️⃣ Clone the repository
+## 1️⃣ Clone the repository
+```bash
 git clone https://github.com/Avalux-07/Sentiment-Analysis-of-Movie_Reviews.git
 cd Sentiment-Analysis-of-Movie_Reviews
+```
 
-2️⃣ Create a virtual environment (recommended)
+## 2️⃣ Create a virtual environment (recommended)
+```bash
 python -m venv venv
-source venv/bin/activate   # Linux / Mac
+source venv/bin/activate   # Linux / macOS
 venv\Scripts\activate      # Windows
+```
 
-3️⃣ Install dependencies
+## 3️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-🚀 Usage
-▶ Train models
+---
+
+## 🚀 Usage
+
+## ▶ Train models
+```bash
 python -m src.train
-
-
+```
 This will:
+1. Load and preprocess data.
+2. Train SVM models with different kernels.
+3. Save trained models and evaluation metrics.
 
-Load and preprocess data
-
-Train SVM models with different kernels
-
-Save trained models and evaluation metrics
-
-▶ Compare results & visualize
+## ▶ Compare results & visualize
+```bash
 python -m src.compare_and_visualize
-
-
+```
 This will:
+1. Load saved evaluation results.
+2. Generate comparison tables.
+3. Create visual plots of model performance.
 
-Load saved evaluation results
+---
 
-Generate comparison tables
+## 📈 Sample Results
 
-Create visual plots of model performance
+The performance of different SVM kernels on the movie review dataset is summarized below:
 
-📈 Sample Results
-Kernel	Accuracy	F1-Score
-Linear	0.8722	0.8711
-Polynomial	0.8216	0.8255
-RBF	0.8789	0.8785
+| Kernel       | Accuracy | F1-Score |
+|--------------|----------|----------|
+| Linear       | 0.87220  | 0.87109  |
+| Polynomial   | 0.82164  | 0.82549  |
+| RBF          | 0.87888  | 0.87854  |
 
-📌 RBF kernel achieved the best overall performance on this dataset.
+📌 **Observation:**  
+The **RBF kernel** achieved the highest accuracy and F1-score, making it the best-performing model for this task.
 
-🧪 Technologies Used
+---
 
-Python
+## 🧪 Technologies Used
+1. Python
+2. Numpy
+3. pandas
+4. scikit-learn
+5. Matplotlib
+6. joblib
 
-NumPy
+---
 
-Pandas
-
-Scikit-learn
-
-Matplotlib
-
-Joblib
-
-📌 Key Features
-
-Modular and reusable codebase
-
-Clean dataset handling (no CSV dependency)
-
-Model persistence using joblib
-
-Clear evaluation & visualization
-
-GitHub-ready project structure
-
-🔒 Git Ignore Policy
-
-The following are excluded from version control:
-
-Trained models (.pkl)
-
-saved_models/
-
-Cache files (__pycache__/)
-
-Virtual environments
-
-👤 Author
-
-Soumik Debnath
-Data Science Student
-IIT Guwahati
+## 👤 Author
+### Soumik Debnath
+### Data Science-IIT Guwahati
 
 GitHub: https://github.com/Avalux-07
-
-⭐ Future Improvements
-
-Add deep learning models (LSTM / BERT)
-
-Hyperparameter tuning with GridSearchCV
-
-Cross-validation
-
-Web interface for live predictions
