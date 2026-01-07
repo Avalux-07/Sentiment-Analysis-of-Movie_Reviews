@@ -93,7 +93,7 @@ This will:
 
 ---
 
-## 📈 Sample Results
+## 📈 Models comparison Result
 
 The performance of different SVM kernels on the movie review dataset is summarized below:
 
@@ -124,5 +124,6 @@ The **RBF kernel** achieved the highest accuracy and F1-score, making it the bes
 ### Data Science-IIT Guwahati
 
 GitHub: https://github.com/Avalux-07
+
 
 
