@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Saved ML models
+saved_models/
+*.pkl
+
+# OS files
+.DS_Store
