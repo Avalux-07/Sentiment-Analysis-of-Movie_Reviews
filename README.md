@@ -109,12 +109,12 @@ The **RBF kernel** achieved the highest accuracy and F1-score, making it the bes
 ---
 
 ## 🧪 Technologies Used
-1. Python
-2. Numpy
-3. pandas
-4. scikit-learn
-5. Matplotlib
-6. joblib
+- Python
+-  Numpy
+- pandas
+- scikit-learn
+- Matplotlib
+- joblib
 
 ---
 
@@ -123,3 +123,4 @@ The **RBF kernel** achieved the highest accuracy and F1-score, making it the bes
 ### Data Science-IIT Guwahati
 
 GitHub: https://github.com/Avalux-07
+
