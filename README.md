@@ -20,7 +20,8 @@ The dataset is structured into `train` and `test` folders with `pos` and `neg` s
 ---
 
 ## 📂 Dataset Structure
-<img width="296" height="211" alt="image" src="https://github.com/user-attachments/assets/2fd5c474-5c25-4bc1-8046-35ecda7d7921" />
+<img width="296" height="250" alt="image" src="https://github.com/user-attachments/assets/d0e2abd9-1fc0-4c89-9a5f-771c5d3bb2b6" />
+
 
 ---
 
@@ -125,6 +126,7 @@ The **RBF kernel** achieved the highest accuracy and F1-score, making it the bes
 ### Data Science-IIT Guwahati
 
 GitHub: https://github.com/Avalux-07
+
 
 
 
